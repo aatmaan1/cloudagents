@@ -1,0 +1,20 @@
+{
+  "name": "property-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server for property portfolio summaries.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "summary": "node src/print-summary.js",
+    "lint": "node -c src/server.js && node -c src/summary.js && node -c src/print-summary.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  }
+}
